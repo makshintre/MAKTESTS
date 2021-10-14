@@ -52,7 +52,6 @@ jobs:
       - run: flutter clean
       #- run: flutter build appbundle
        # Build apk.
-<<<<<<< HEAD
     - run: flutter build apk
     
     # Upload generated apk to the artifacts.
@@ -60,11 +59,3 @@ jobs:
       with:
         name: release-apk
         path: build/app/outputs/apk/release/app-release.apk
-=======
-      - run: flutter build apk
-     # Upload generated apk to the artifacts.
-      - uses: actions/upload-artifact@v1
-        with:
-         name: release-apk
-         path: build/app/outputs/apk/release/app-release.apk
->>>>>>> b28609dd604193726ca9e8ea30c8d067449bb567
